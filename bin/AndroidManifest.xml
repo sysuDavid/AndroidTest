@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.test"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />  
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />  
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+	<!-- 下载的权限 -->
+ 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+ 	<!-- 悬浮窗 -->
+ 	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+ 	<!-- 创建快捷图标 -->
+ 	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+ 	<!-- 手机震动 -->
+	<uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data android:name="TencentMapSDK"
+            android:value="USIBZ-G5DRP-QUSDL-VYMNX-VYBUH-NZBSJ" />
+        <activity
+            android:name="com.example.test.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 广告展示 -->
+		<activity android:name="com.otomod.ad.AdActivity" >
+ 			<intent-filter>
+ 				<action android:name="com.otomod.ad.shortcut" />
+ 				<category android:name="android.intent.category.DEFAULT" />
+ 			</intent-filter>
+ 		</activity>
+ 
+        <activity
+            android:name="com.example.test.ListViewActivity" >
+        </activity>
+        <activity
+            android:name="com.example.test.WebActivity" >
+        </activity>
+        <activity
+            android:name="com.example.test.XMLActivity" >
+        </activity>
+        <activity
+            android:name="com.example.test.ShareActivity" >
+        </activity>
+        <activity
+            android:name="com.example.test.ShareOtherActivity" >
+        </activity>
+        <activity
+            android:name="com.example.test.DataBaseHelper" >
+        </activity>
+        <activity
+            android:name="com.example.test.SQLiteActivity" >
+        </activity>
+        <activity
+            android:name="com.example.test.LocationActivity" >
+        </activity>
+        <activity
+            android:name="com.example.test.touchEventActivity" >
+        </activity>
+        <activity
+            android:name="com.example.test.JsonActivity" >
+        </activity>
+        <activity
+            android:name="com.example.test.DateActivity" >
+        </activity>
+        <activity
+            android:name="com.example.test.Map" >
+        </activity>
+        <activity
+            android:name="com.example.test.LocListener" >
+        </activity>
+        <activity
+            android:name="com.example.test.AdActivity" >
+        </activity>
+    </application>
+	
+</manifest>

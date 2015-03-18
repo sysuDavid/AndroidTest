@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/adLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Banner" />
+
+    <Button
+        android:id="@+id/btnOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open" />
+
+    <Button
+        android:id="@+id/btnPop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pop" />
+
+    <Button
+        android:id="@+id/btnFull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full" />
+
+    <Button
+        android:id="@+id/btnFloat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Float" />
+
+</LinearLayout>
